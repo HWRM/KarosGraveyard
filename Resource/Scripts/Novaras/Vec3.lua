@@ -215,7 +215,7 @@ end
 ---@param vec3 Vec3Like
 ---@return number
 function Vec3:unit(vec3)
-	vec3 = Vec(vec3);
+	vec3 = Vec3(vec3);
 	return vec3 / Vec3:mag(vec3);
 end
 
@@ -240,7 +240,7 @@ function Vec3:magnitude(vec3)
 	vec3 = Vec3(vec3);
 	local mag = 0;
 	for _, v in vec3 do
-		mag = mag + pow(v, 2);
+		mag = mag + (v ^ 2);
 	end
 	return sqrt(mag);
 end
