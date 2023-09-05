@@ -7,7 +7,7 @@ local n = 5;
 
 print("v1: " .. v1);
 print("v2: " .. v2);
-print("n: 10");
+print("n: " .. n);
 print("---\n");
 
 print("v1 + v2 = " .. v1 + v2);
