@@ -93,9 +93,6 @@ function Vec3:create(init)
 	settagmethod(vector_tag, "unm", unm_hook);
 
 	local add_hook = function (lh, rh, o)
-		print("lh = " .. tostring(lh));
-		print("rh = " .. tostring(rh));
-		print("o = " .. tostring(o));
 		lh = Vec3(lh);
 		rh = Vec3(rh);
 
