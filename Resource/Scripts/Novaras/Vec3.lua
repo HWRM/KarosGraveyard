@@ -210,7 +210,7 @@ end
 --- Returns the unit vector of the given vector.
 ---
 ---@param vec3 Vec3Like
----@return number
+---@return Vec3
 function Vec3:unit(vec3)
 	vec3 = Vec3(vec3);
 	return vec3 / Vec3:mag(vec3);
